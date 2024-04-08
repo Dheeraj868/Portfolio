@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(210, 205, 194);
+    color: white;
+}
+nav ul{
+    display: flex;
+    justify-content:center;
+   
+}
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 23px;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li:hover{
+    color: rgb(140, 200, 237);
+}
+main hr{
+    border: 0;
+    background: #bc8be8;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+.left{
+    font-size: 30px;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+.first >div{
+    width: 30%;
+}
+.leftsec{
+    font-size: 2.5rem;
+    margin: 120px 0;
+    
+}
+.rightsec img{
+    height: 500px;
+    width: 80%;
+}
+.purple{
+    color: rgb(137, 69, 201);
+}
+.second{
+    max-width: 80vw;
+    margin: auto;
+}
+.second h1{
+    text-align: center;
+    font-size: 40px;
+}
+.text{
+    font-size: 22px;
+}
+.bold{
+    font-weight: 800;
+}
+#edu{
+    text-align: center;
+    font-size: 40px;
+}
+.education{
+    display: flex;
+    justify-content: space-around;
+}
+.ed-img img{
+    margin-top: 80px;
+    height:500px;
+    width: 80%;
+}
+.third{
+    margin: 120px 0px;
+    width: 30%;
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+.box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    cursor:pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border: 2px solid white;
+}
+.box h4{
+    position: relative;
+    color: #11a372;
+}
+.box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    color: #444;
+}
+.box p{
+    line-height: 1.2;
+    color: #666;
+    font-size: 17px;
+}
+.fourth{
+    margin: auto;
+    max-width: 80vw;
+    padding: 0px 30px;
+}
+.skills{
+    padding: 20px;
+    list-style: none;
+    
+}
+.skills li{
+    margin:20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+.html-css{
+    width:80%;
+    animation: html-css 3s;
+
+}
+.javascript{
+    width: 70%;
+    animation: javascript 3s;
+}
+.java{
+    width: 65%;
+    animation: java 3s;
+}
+.sql{
+    width: 70%;
+    animation: sql 3s;
+}
+@keyframes html-css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.fifth{
+    margin: auto;
+    max-width: 80vw;
+    padding: 0px 30px;
+}
+.proj-sec h3{
+    font-size: 30px;
+    text-decoration:underline;
+}
+.proj-sec p a{
+    font-size: 20px;
+}
+.proj-sec a{
+    text-decoration: none;
+}
+.footer{
+    height: 220px;
+    width: 100%;
+    background-color: rgb(210, 205, 194);
+}
+.footer h3{
+    text-align: center;
+    padding-top: 20px;
+
+}
+.sitemap{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 20px 0;
+}
+.sitemap ul li{
+    list-style: none;
+    padding-left: 20px;
+    border-left: 3.5px solid red;
+    animation: slide 2s infinite;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+ul li a:hover{
+    color: rgb(69, 34, 223);
+}
+ul li p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(244, 17, 17);
+}
+@media screen and (max-width:825px){
+    .footer{
+        background-color: rgb(210, 205, 194);
+    }
+}
